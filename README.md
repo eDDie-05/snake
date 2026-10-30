@@ -1,85 +1,33 @@
-Python Snake Game
+# Snake — Python
 
-A simple and fun Snake Game built with Python. Control the snake, eat the food, grow longer, and try to achieve the highest score without hitting the walls or yourself.
+A classic Snake game built with Python and Pygame. Move around the board, collect food and grow while avoiding collisions.
 
- Features
- Classic Snake gameplay
- Food collection and snake growth
- Score tracking
- Collision detection
- Game-over and restart functionality
- Simple and beginner-friendly Python project
- Technologies Used
-Python 3
-Pygame — for graphics, keyboard controls, game logic, and sound
- Requirements
+## Features
+- Grid-based snake movement
+- Random food placement
+- Score display
+- Boundary and self-collision checks
 
-Make sure you have Python 3 installed on your computer.
+## Requirements
+- Python 3.9 or newer
+- Pygame
 
-Install Pygame using:
-
-pip install pygame or python3 -m pip install pygame 
-
-How to Run
-Clone this repository:
-git clone https://github.com/your-username/python-snake-game.git
-
-Navigate into the project directory:
-cd ~/Desktop/snake-master
-
-Install the required dependency:
-pip install pygame
-
-Run the game:
+## Run locally
+```bash
+python -m venv .venv
+# macOS / Linux
+source .venv/bin/activate
+# Windows PowerShell
+.venv\Scripts\Activate.ps1
+python -m pip install pygame
 python snake.py
+```
 
- Controls
-Key	Action
- Up Arrow	Move Up
- Down Arrow	Move Down
- Left Arrow	Move Left
- Right Arrow	Move Right
-R	Restart Game
-ESC	Quit Game
- How to Play
-Use the arrow keys to control the snake.
-Eat the food to increase your score and grow the snake.
-Avoid hitting the walls.
-Avoid running into the snake's own body.
-The game ends when a collision occurs.
-Try to beat your highest score!
- Project Structure
-python-snake-game/
-│
-├── snake.py          # Main game file
-├── README.md         # Project documentation
+## Controls
+Use the arrow keys to change direction. Close the game window to exit.
 
- Future Improvements
+## Project files
+- `snake.py` — game loop, movement, food and scoring
 
-Some features that could be added in the future:
-
- High-score saving
- Multiple difficulty levels
- Background music and sound effects
- Different themes and skins
- Increasing game speed
- Obstacles and different game maps
- Multiplayer mode
- Contributing
-
-Contributions are welcome! If you'd like to improve the game:
-
-Fork the repository.
-Create a new branch.
-Make your changes.
-Commit your changes.
-Open a pull request.
- License
-
-This project is open source and available under the MIT License.
-
- Author
-
-eDDie
-
-If you enjoyed the project, consider giving the repository a star on GitHub!
+## Current scope
+A small local learning project. Persistent high scores, configurable difficulty and automated tests are not currently documented as implemented.
